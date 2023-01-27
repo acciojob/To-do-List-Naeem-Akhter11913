@@ -1,8 +1,10 @@
 //your code here
-
-function addTodoBtn() {
+function onClick() {
 	let text = document.getElementById("newTodoInput").value;
+
 	if(text == "")
 		return;
-	let gaintext = document.getElementById("todoList").innerHTML += "<li>"+text+"</li>";
+
+	document.getElementById("todoList").innerHTML += "<li>"+text+"</li>";
 }
+addTodoBtn.addEventListener('click',onClick);
