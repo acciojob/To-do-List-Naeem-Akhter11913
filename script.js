@@ -1,7 +1,7 @@
 //your code here
 
-function change() {
-	let text = document.getElementById("inp").value;
+function addTodoBtn() {
+	let text = document.getElementById("newTodoInput").value;
 	if(text == "")
 		return;
 	let gaintext = document.getElementById("todoList").innerHTML += "<li>"+text+"</li>";
